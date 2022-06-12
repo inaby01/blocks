@@ -69,9 +69,9 @@ class Board extends React.Component<BoardPropsInterface, BoardStateInterface> {
     squares[i] = this.state.xIsNext ? 'X' : 'O';
 
     this.setState({
-      squares: squares,
+      squares,
       xIsNext: !this.state.xIsNext,
-      winner: winner
+      winner,
     });
   }
 
